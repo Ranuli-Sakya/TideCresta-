@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guest Feedback | Maison 369</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#" img src="TideCresta_Logo.png" widht="50px" height="50px"></a>  
+      <a class="navbar-brand fw-bold" href="#">🌊TideCresta</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="tour-packages.html">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="chat-support.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="container py-5">
+    <header class="mb-4">
+      <h1 class="mb-3">📝 Guest Feedback & Requests</h1>
+      <p class="lead">
+        We value your feedback. Please share your experience, special requests, or concerns with us.
+      </p>
+    </header>
+
+    <section class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <form id="feedbackForm" novalidate>
+          <!-- Feedback Type -->
+          <fieldset class="mb-4">
+            <legend class="h6">Type of Submission</legend>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="feedbackType"
+                id="generalFeedback"
+                value="General Feedback"
+                required
+              />
+              <label class="form-check-label" for="generalFeedback">
+                General Feedback
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="feedbackType"
+                id="specialRequest"
+                value="Special Request"
+              />
+              <label class="form-check-label" for="specialRequest">
+                Special Request
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="feedbackType"
+                id="complaint"
+                value="Complaint"
+              />
+              <label class="form-check-label" for="complaint">
+                Complaint
+              </label>
+            </div>
+
+            <div class="invalid-feedback d-block">
+              Please select a submission type.
+            </div>
+          </fieldset>
+
+          <!-- Guest Name -->
+          <div class="mb-3">
+            <label for="guestName" class="form-label">Your Name</label>
+            <input
+              type="text"
+              id="guestName"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+
+          <!-- Room Number -->
+          <div class="mb-3">
+            <label for="roomNumber" class="form-label">Room Number (optional)</label>
+            <input
+              type="text"
+              id="roomNumber"
+              class="form-control"
+              aria-describedby="roomHelp"
+            />
+            <div id="roomHelp" class="form-text">
+              Providing your room number helps us respond faster.
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="mb-4">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea
+              id="message"
+              class="form-control"
+              rows="5"
+              required
+            ></textarea>
+            <div class="invalid-feedback">
+              Please enter your message.
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn-dark">
+            Submit
+          </button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-3">
+    <p class="mb-0">© 2025 Maison 369 Boutique Hotel</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Page JS -->
+  <script src="feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exclusive Promotions | TideCresta</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#" img src="TideCresta_Logo.png" widht="50px" height="50px"></a>  
+      <a class="navbar-brand fw-bold" href="#">🌊TideCresta</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="tour-packages.html">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="chat-support.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main-content" class="container py-5">
+    <header class="mb-5">
+      <h1 class="mb-3">🎉 Exclusive In-House Promotions</h1>
+      <p class="lead">
+        Enjoy special offers available exclusively to our in-house guests.
+      </p>
+    </header>
+
+    <!-- Promotions Grid -->
+    <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">View More Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">View More Details</a>
+      </div>
+    </div>
+  </div>
+</div>
+   
+
+      <!-- Dining Promotion -->
+      <div class="col-md-6 col-lg-4">
+        <article class="service-card h-100">
+          <h2 class="h5">🍽️ Dining Experience</h2>
+          <p>Receive a <strong>complimentary dessert</strong> with any dinner order.</p>
+          <p class="text-muted">Restaurant reservations only</p>
+          <button
+            class="btn btn-outline-dark mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#diningPromoModal"
+          >
+            View Details
+          </button>
+        </article>
+      </div>
+
+      <!-- Event Promotion -->
+      <div class="col-md-6 col-lg-4">
+        <article class="service-card h-100">
+          <h2 class="h5">🎶 Event Bookings</h2>
+          <p>Get <strong>15% off</strong> on selected in-house events and experiences.</p>
+          <p class="text-muted">Limited availability</p>
+          <button
+            class="btn btn-outline-dark mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#eventPromoModal"
+          >
+            View Details
+          </button>
+        </article>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Spa Modal -->
+  <div class="modal fade" id="spaPromoModal" tabindex="-1" aria-labelledby="spaPromoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="spaPromoLabel">Spa Relaxation Offer</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>This promotion includes a 20% discount on selected massage and wellness treatments.</p>
+          <p><strong>Booking:</strong> Please contact reception or visit the spa desk.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dining Modal -->
+  <div class="modal fade" id="diningPromoModal" tabindex="-1" aria-labelledby="diningPromoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="diningPromoLabel">Dining Experience Offer</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Guests dining with us receive a complimentary dessert with dinner.</p>
+          <p><strong>Availability:</strong> Dinner hours only.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Modal -->
+  <div class="modal fade" id="eventPromoModal" tabindex="-1" aria-labelledby="eventPromoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="eventPromoLabel">Event Booking Discount</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Enjoy 15% off on selected cultural evenings and exclusive in-house events.</p>
+          <p><strong>Seats are limited.</strong> Early booking recommended.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-3">
+    <p class="mb-0">© 2025 Maison 369 Boutique Hotel</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Page JS -->
+  <script src="promotions.js"></script>
+</body>
+</html>

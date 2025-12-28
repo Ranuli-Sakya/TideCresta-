@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tours & Attractions | Maison 369</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!--Header-->
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#" img src="TideCresta_Logo.png" widht="50px" height="50px"></a>  
+      <a class="navbar-brand fw-bold" href="#">🌊TideCresta</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="tour-packages.html">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="chat-support.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  </header>
+
+  <!-- Main -->
+  <main id="main-content" class="container py-5">
+    <header class="mb-5">
+      <h1 class="mb-3">🧭 Tours & Local Attractions</h1>
+      <p class="lead">
+        Discover curated experiences and explore the best local attractions during your stay.
+      </p>
+    </header>
+
+    <!-- Tours Grid -->
+    <section class="row g-4">
+
+      <!-- Cultural Tour -->
+      <div class="col-md-6 col-lg-4">
+        <article class="service-card h-100">
+          <h2 class="h5">🏛️ Cultural Heritage Tour</h2>
+          <p>
+            Visit historical landmarks and experience local traditions with a guided tour.
+          </p>
+          <p class="text-muted">Half-day • Guided</p>
+          <button
+            class="btn btn-outline-dark mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#tourModal"
+            data-tour="Cultural Heritage Tour"
+          >
+            Inquire / Book
+          </button>
+        </article>
+      </div>
+
+      <!-- Nature Tour -->
+      <div class="col-md-6 col-lg-4">
+        <article class="service-card h-100">
+          <h2 class="h5">🌿 Nature & Scenic Escape</h2>
+          <p>
+            Enjoy breathtaking landscapes, waterfalls, and nature trails.
+          </p>
+          <p class="text-muted">Full-day • Outdoor</p>
+          <button
+            class="btn btn-outline-dark mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#tourModal"
+            data-tour="Nature & Scenic Escape"
+          >
+            Inquire / Book
+          </button>
+        </article>
+      </div>
+
+      <!-- City Experience -->
+      <div class="col-md-6 col-lg-4">
+        <article class="service-card h-100">
+          <h2 class="h5">🏙️ City Experience</h2>
+          <p>
+            Explore the city’s highlights, markets, and dining spots with a local guide.
+          </p>
+          <p class="text-muted">Half-day • Urban</p>
+          <button
+            class="btn btn-outline-dark mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#tourModal"
+            data-tour="City Experience"
+          >
+            Inquire / Book
+          </button>
+        </article>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Inquiry Modal -->
+  <div
+    class="modal fade"
+    id="tourModal"
+    tabindex="-1"
+    aria-labelledby="tourModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form id="tourInquiryForm" novalidate>
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="tourModalLabel">
+              Tour Inquiry
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="selectedTour" class="form-label">Selected Tour</label>
+              <input
+                type="text"
+                id="selectedTour"
+                class="form-control"
+                readonly
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="guestName" class="form-label">Your Name</label>
+              <input
+                type="text"
+                id="guestName"
+                class="form-control"
+                required
+              />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="preferredDate" class="form-label">Preferred Date</label>
+              <input
+                type="date"
+                id="preferredDate"
+                class="form-control"
+                required
+              />
+              <div class="invalid-feedback">Please select a date.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="notes" class="form-label">Additional Notes</label>
+              <textarea
+                id="notes"
+                class="form-control"
+                rows="3"
+                placeholder="Special requests or questions"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-dark">
+              Submit Inquiry
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-3">
+    <p class="mb-0">© 2025 Maison 369 Boutique Hotel</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Page JS -->
+  <script src="tours.js"></script>
+</body>
+</html>
